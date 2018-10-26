@@ -18,6 +18,7 @@ let output = [
     marketPrice: 24,
   },
 ]
+
 console.log('------->', db);
 const samplePurchase = function() {
   db.Buy.create(samplePosts)
