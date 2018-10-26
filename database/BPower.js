@@ -4,7 +4,7 @@ mongoose.Promise = global.Promise;
 
 let buyingPowerSchema = new mongoose.Schema({
   id: Number,
-  user: String, 
+  symbol: String, 
   marketPrice: Number,
 });
 

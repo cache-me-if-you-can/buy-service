@@ -1,33 +1,51 @@
 const db  = require('./index.js');
+var BPower = require('./BPower.js');
+var Buy = require('./Buy.js');
+var faker = require('faker');
 
 
-const samplePosts = [
-  {
-    uniqId: 123,
-    symbol: 'aapl',
-    name: 'Apple',
-    marketPrice: 100,
-    created_at: "2017-05-03T03:50:00Z",
-  },
- ]
+var fakeId = faker.random.number();
+var fakeName = faker.company.companyName();
+var fakePrice = faker.finance.amount(23.46,567.98,2);
+var fakeAccount = faker.finance.account();
+var fakeSymbol = faker.finance.currencyCode();
 
-let output = [
-  {
-    id: 000123,
-    symbol: 'aapl',
-    marketPrice: 24,
-  },
-]
+const samplePostGen = function () {
+  for (var i = 0; i < 100; i++) {
+    let samplePosts = [
+      {
+        uniqId: faker.random.number(),
+        symbol: faker.finance.currencyCode(),
+        name: faker.company.companyName(),
+        marketPrice: faker.finance.amount(23.46,567.98,2),
+      }
+    ]
+    let samplePurchase = function() {
+      Buy.create(samplePosts)
+      .then(() => db.close());
+    };
+    samplePurchase();
+  }
+}
 
-console.log('------->', db);
-const samplePurchase = function() {
-  db.Buy.create(samplePosts)
-    .then(() => db.db.disconnect());
-};
+const sampleBPowerGen = function () {
+  for (var i = 0; i < 100; i++) {
+    let output = [
+      {
+        id:  faker.random.number(),
+        symbol: faker.finance.currencyCode(),
+        marketPrice: faker.finance.amount(23.46,567.98,2),
+      },
+    ]
+    
+    let sampleBPower = function() {
+      BPower.create(output)
+      .then(() => db.close());
+    };
+    sampleBPower();
+  } 
+}
 
-const sampleBPower = function() {
-  db.BPower.create(output)
-    .then(() => db.db.disconnect());
-};
-samplePurchase();
-sampleBPower();
+samplePostGen();
+sampleBPowerGen();
+
