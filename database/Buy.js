@@ -8,9 +8,9 @@ let buyingSchema = new mongoose.Schema({
   name: String,
   marketPrice: Number,
 },
-  {
-    timestamps: true
-  }
+{
+  timestamps: true
+}
 );
 
 const Buy = mongoose.model('Buy', buyingSchema);
