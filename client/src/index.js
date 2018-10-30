@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Form from './components/Form.jsx';
 
 class App extends React.Component {
   constructor() {
@@ -12,7 +13,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <button>Hello</button>
+      <div>
+        <div>Graph</div>
+        <div>
+          <Form></Form>
+        </div>
+        <div>About</div>
+        <div>Collections</div>
+        <div>News</div>
+        <div>Price Paid On Robinhood</div>
+        <div>People Also Bought</div>
+      </div>
     );
   }
 }
