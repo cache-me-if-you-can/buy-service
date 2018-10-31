@@ -16,7 +16,6 @@ class App extends React.Component {
   asyncGet(callback) {
     axios.get('/api/buytest')
       .then(function (response) {
-        console.log('The findOne', response);
         callback(response);
       })
       .catch(function (error) {
