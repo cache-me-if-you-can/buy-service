@@ -12,11 +12,20 @@ class Form extends React.Component {
     this.state = {
       company: 'FILL ME IN',
       marketPrice: 'FILL ME IN',
-      estimatedCost: 'FILL ME IN',
+      estimatedCost: 0,
       buyingPower: 'FILL ME IN',
+      counter: 0,
     };
+    this.handleShares = this.handleShares.bind(this);
   }
 
+  handleShares(e) {
+    let x = parseInt(e.target.value);
+    console.log(x);
+    this.setState({
+      counter: x
+    });
+  }
   
   componentDidMount() {
     this.props.asyncGet((res) => {
@@ -31,8 +40,8 @@ class Form extends React.Component {
     return <div>
       <h3 id="company">{this.state.company}</h3>
       <MarketPrice prices={this.state.marketPrice}/>
-      <input placeholder="Shares"></input>
-      <EstimatedCost estimation={this.state.estimatedCost}/>
+      <input type="number" placeholder="Shares" onChange={this.handleShares}></input>
+      <EstimatedCost estimation={this.state.counter * this.state.marketPrice}/>
       <ReviewOrder/>
       <BuyingPower credits={this.state.buyingPower}/>
       <WatchList/>
