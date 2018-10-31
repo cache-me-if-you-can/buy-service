@@ -8,7 +8,7 @@ import WatchList from './WatchList.jsx';
 class Form extends React.Component {
   constructor(props) {
     super(props);
-
+ 
     this.state = {
       company: 'FILL ME IN',
       marketPrice: 'FILL ME IN',
