@@ -21,10 +21,16 @@ class Form extends React.Component {
 
   handleShares(e) {
     let x = parseInt(e.target.value);
-    console.log(x);
-    this.setState({
-      counter: x
-    });
+    if (x < 0) {
+      this.setState({
+        counter: 0
+      });
+    }
+    if (x >= 0) {
+      this.setState({
+        counter: x
+      });
+    }
   }
   
   componentDidMount() {
