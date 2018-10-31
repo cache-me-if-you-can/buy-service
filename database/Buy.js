@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const db = require('./index.js');
+var random = require('mongoose-random');
 mongoose.Promise = global.Promise;
 
 let buyingSchema = new mongoose.Schema({
@@ -10,8 +11,10 @@ let buyingSchema = new mongoose.Schema({
 },
 {
   timestamps: true
-}
-);
+});
+
+buyingSchema.plugin(random, { path: 'r' });
+
 
 const Buy = mongoose.model('Buy', buyingSchema);
 

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Form from './components/Form.jsx';
 import axios from 'axios';
+
 class App extends React.Component {
   constructor() {
     super();
@@ -15,14 +16,14 @@ class App extends React.Component {
   asyncGet(callback) {
     axios.get('/api/buytest')
       .then(function (response) {
-        // console.log('THA RESPONSE', response);
+        console.log('The findOne', response);
         callback(response);
       })
       .catch(function (error) {
-        // console.log(error);
         callback(error);
       });
   }
+
   render() {
     return (
       <div>

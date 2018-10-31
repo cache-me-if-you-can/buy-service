@@ -12,8 +12,11 @@ app.use(bodyparser.urlencoded({extended: true}));
 
 app.use(express.static(__dirname + '/../client/dist'));
 
+
+
 app.get('/api/buytest', (req, res) => {
-  dbuy.find((err, docs) => {
+  dbuy.findRandom().limit(10).exec((err, docs) => {
+    console.log(docs);
     if (err) {
       res.send(err);
     } else {

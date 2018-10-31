@@ -20,9 +20,7 @@ class Form extends React.Component {
 
   
   componentDidMount() {
-
-    var result = this.props.asyncGet((res) => {
-      console.log(res.data[0].symbol);
+    this.props.asyncGet((res) => {
       this.setState({
         company: res.data[0].symbol,
         marketPrice: res.data[0].marketPrice,
