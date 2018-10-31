@@ -27,7 +27,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div>Graph</div>
         <span>
           <Form asyncGet={this.asyncGet}></Form>
         </span>

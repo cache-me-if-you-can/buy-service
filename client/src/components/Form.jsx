@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import MarketPrice from './MarketPrice.jsx';
 import EstimatedCost from './EstimatedCost.jsx';
 import ReviewOrder from './ReviewOrder.jsx';
@@ -42,5 +41,3 @@ class Form extends React.Component {
 }
 
 export default Form;
-
-// I think I need to have Form be a class component that divvies out info accordingly
