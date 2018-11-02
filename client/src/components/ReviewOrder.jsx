@@ -1,4 +1,5 @@
 import React from 'react';
+import form from './Form.css';
 
 class ReviewOrder extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class ReviewOrder extends React.Component {
   
   render() {
     return (
-      <button id="review-order">Review Order</button>
+      <button className={form.reviewOrder}>Review Order</button>
     );
   }
 }

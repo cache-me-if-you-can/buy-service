@@ -1,9 +1,10 @@
 import React from 'react';
-
+import form from './Form.css';
 const MarketPrice = (props) => (
-  <div>
-    <button id="market-price-button">Market Price </button>
-    <span id="market-price-number">${props.prices}</span> 
+  <div className= {form.marketPriceContainer}>
+    <div className= {form.marketPriceTitle}> Market Price 
+      <span className={form.marketPrice}>${props.prices}</span> 
+    </div>
   </div>
 );
 

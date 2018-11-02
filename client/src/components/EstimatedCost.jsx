@@ -1,8 +1,11 @@
 import React from 'react';
+import form from './Form.css';
 
 const EstimatedCost = (props) => (
-  <div> Estimated Cost
-    <span id="estimated-cost-calc"> {props.estimation}</span>
+  <div className={form.estimatedPriceContainer}> 
+    <div>Estimated Cost
+      <span className={form.marketPrice}> {props.estimation}</span>
+    </div>
   </div>
 );
 

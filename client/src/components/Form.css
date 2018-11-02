@@ -1,0 +1,97 @@
+/* .form {
+  display: flex;
+  background: aquamarine;
+  width: 500px;
+  height: 500px;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.company {
+  color: mediumslateblue;
+  border: 5px solid salmon;
+}
+
+.market {
+  margin-top: -20px;
+} */
+
+/* @font-face {
+  font-family: ‘DIN Pro’;
+  font-style: normal;
+  src: url(https://d2ue93q3u507c2.cloudfront.net/assets/generated_assets/e0be9bd5e372b2c379893b776e7b2b96.otf) format(“opentype”);
+ } */
+
+
+.form {
+  display: block;
+  position: relative;
+  border: 10px;
+  border-style: outset;
+  box-shadow: 0 0 4px 1px;
+  border-color: #f4f4f5;
+  padding: 0 24px;
+  margin-top: 0em;
+  width: 275.77px;
+  height: 354px;
+  color: white;
+  background-color: #1b1b1d;
+ }
+
+ 
+ .orderType {
+   width: 28px;
+   height: 28px;
+   margin-left: 240px;
+   margin-bottom: 440px;
+   margin-top: -15px;
+  }
+  .testFont {
+    font-family: ‘DIN Pro’;
+    font-style: normal;
+  }
+  .marketPriceContainer {
+    width:275.77px;
+    height: 42px;  
+  }
+  .shareField {
+    width: 82px;
+    height: 36px;
+    margin-left: 140px;
+    background-color: #171718;
+    color: #7c7c7e;
+    border-radius: 5px;
+  } 
+  .marketPrice {
+    width: 27.77px;
+    height: 48px;
+    margin-left: 140px;
+    color: white;
+  }
+  
+  .marketPriceTitle {
+    color: #1ae9aa;
+  }
+  
+  .estimatedPriceContainer {
+    width:275.77px;
+    height: 42px;  
+  }
+  .estimatedCost {
+    width: 227.77px;
+    height: 48px;
+    margin-left: 140px;
+  }
+  
+  .reviewOrder {
+    display: flex;
+    width: 227.77px;
+    height: 48px;
+    background: #1ae9aa;
+    border-color:#1ae9aa;
+    align-content: center;
+  }
+  
+  .ellipses {
+   fill: white;
+ }
