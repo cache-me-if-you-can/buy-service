@@ -15,12 +15,17 @@
 .market {
   margin-top: -20px;
 } */
-
-/* @font-face {
-  font-family: ‘DIN Pro’;
+  /* @font-face {
+  font-family: "DIN Pro";
   font-style: normal;
   src: url(https://d2ue93q3u507c2.cloudfront.net/assets/generated_assets/e0be9bd5e372b2c379893b776e7b2b96.otf) format(“opentype”);
- } */
+  } */
+
+.testFont {
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
 
 
 .form {
@@ -38,7 +43,20 @@
   background-color: #1b1b1d;
  }
 
- 
+ .buyingPower {
+  display: block;
+  position: relative;
+  border: 10px;
+  border-style: outset;
+  box-shadow: 0 0 4px 1px;
+  border-color: #f4f4f5;
+  padding: 0 24px;
+  width: 275.77px;
+  height: 48px;
+  background-color: #1b1b1d;
+  color: white;
+ }
+
  .orderType {
    width: 28px;
    height: 28px;
@@ -46,14 +64,12 @@
    margin-bottom: 440px;
    margin-top: -15px;
   }
-  .testFont {
-    font-family: ‘DIN Pro’;
-    font-style: normal;
-  }
+
   .marketPriceContainer {
     width:275.77px;
     height: 42px;  
   }
+
   .shareField {
     width: 82px;
     height: 36px;
@@ -62,6 +78,7 @@
     color: #7c7c7e;
     border-radius: 5px;
   } 
+
   .marketPrice {
     width: 27.77px;
     height: 48px;
@@ -77,6 +94,7 @@
     width:275.77px;
     height: 42px;  
   }
+
   .estimatedCost {
     width: 227.77px;
     height: 48px;
@@ -84,14 +102,37 @@
   }
   
   .reviewOrder {
-    display: flex;
+    display: inline-block;
     width: 227.77px;
     height: 48px;
     background: #1ae9aa;
     border-color:#1ae9aa;
-    align-content: center;
+    text-align: center;
   }
-  
+
+  .reviewOrderContainer {
+    width: 275.77px;
+    height: 85px;
+  }
+
   .ellipses {
    fill: white;
+ }
+
+ .watchListContainer {
+  display: inline-block;
+  width: 227.77px;
+  height: 48px;
+  text-align: center;
+ }
+
+ .watchList {
+  width: 227.77px;
+  height: 48px;
+  background: #1ae9aa;
+  border-color:#1ae9aa;
+  text-align: center;
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  font-weight: bold;
  }

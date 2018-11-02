@@ -61,4 +61,6 @@ typings/
 .next
 
 # the big bundle
-./client/dist/bundle.js
+client/dist/bundle.js
+client/src/components/Company.css
+client/src/index.css

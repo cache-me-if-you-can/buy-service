@@ -1,5 +1,5 @@
 import React from 'react';
-
+import form from './Form.css';
 class WatchList extends React.Component {
   constructor() {
     super();
@@ -13,7 +13,7 @@ class WatchList extends React.Component {
 
   render() {
     return (
-      <button>Remove From Watchlist</button>
+      <button className= {form.watchList}>Remove From Watchlist</button>
     );
   }
 }
