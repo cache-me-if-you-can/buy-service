@@ -21,8 +21,8 @@
   src: url(https://d2ue93q3u507c2.cloudfront.net/assets/generated_assets/e0be9bd5e372b2c379893b776e7b2b96.otf) format(“opentype”);
   } */
 
-.testFont {
-  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+.topDiv {
+  font-family: 'DIN Pro', -apple-system, BlinkMacSystemFont, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -55,6 +55,8 @@
   height: 48px;
   background-color: #1b1b1d;
   color: white;
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
  }
 
  .orderType {
@@ -65,11 +67,12 @@
    margin-top: -15px;
   }
 
+  
   .marketPriceContainer {
     width:275.77px;
     height: 42px;  
   }
-
+  
   .shareField {
     width: 82px;
     height: 36px;
@@ -78,7 +81,7 @@
     color: #7c7c7e;
     border-radius: 5px;
   } 
-
+  
   .marketPrice {
     width: 27.77px;
     height: 48px;
@@ -94,7 +97,7 @@
     width:275.77px;
     height: 42px;  
   }
-
+  
   .estimatedCost {
     width: 227.77px;
     height: 48px;
@@ -108,31 +111,66 @@
     background: #1ae9aa;
     border-color:#1ae9aa;
     text-align: center;
+    font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-style: normal;
+    font-weight: bold;
   }
-
+  
   .reviewOrderContainer {
     width: 275.77px;
     height: 85px;
   }
+  
+  .buyOptions {
+    margin-left: 176px;
+  }
+  
+  .ellipsesBox {
+    margin-bottom: 112px;
+  }
 
   .ellipses {
-   fill: white;
- }
+    fill: white;
+  }
+  
+  .watchListContainer {
+    display: inline-block;
+    width: 227.77px;
+    height: 48px;
+    text-align: center;
+  }
+  
+  .watchList {
+    width: 227.77px;
+    height: 48px;
+    background: #1ae9aa;
+    border-color:#1ae9aa;
+    text-align: center;
+    font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+  }
 
- .watchListContainer {
-  display: inline-block;
-  width: 227.77px;
-  height: 48px;
-  text-align: center;
- }
-
- .watchList {
-  width: 227.77px;
-  height: 48px;
-  background: #1ae9aa;
-  border-color:#1ae9aa;
-  text-align: center;
-  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-style: normal;
-  font-weight: bold;
- }
+    /* .sideNav {
+      height: 100%;
+      width: 200px;
+      overflow-x: hidden;
+    }
+  
+    .sideNavA {
+      display: block;
+      outline: none;
+      cursor: pointer;
+    }
+  
+    .sideNavB {
+      display: block;
+      outline: none;
+      cursor: pointer;
+    }
+    
+    .sideNavC {
+      display: block;
+      outline: none;
+      cursor: pointer;
+    } */

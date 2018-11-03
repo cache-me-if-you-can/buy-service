@@ -61,18 +61,18 @@ class Form extends React.Component {
 
   render() {
     return <div>
-      <div className={form.form}>
-        <header >
-          <Company name={this.state.company}/>
-        </header>
-        <div className= {form.testFont}>
+      <div className= {form.form}>
+        <div className= {form.topDiv}>
+          <header>
+            <Company name={this.state.company}/>
+          </header>
           <div>
-            <div>
+            <label>
               <span>Shares</span>
               <input type="number" 
                 className={form.shareField}
                 onChange={this.handleShares}></input>
-            </div>
+            </label>
             <div>
               <MarketPrice prices={this.state.marketPrice}/>
             </div>
