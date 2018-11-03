@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Form from './components/Form.jsx';
 import axios from 'axios';
+import index from './index.css';
 
 class App extends React.Component {
   constructor() {
@@ -25,13 +26,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <span>
-          <Form asyncGet={this.asyncGet}></Form>
-        </span>
+      <div className={index.form}>
+        <header >
+          <span>
+          </span>
+        </header>
+        <Form asyncGet={this.asyncGet}></Form>
       </div>
     );
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+// ReactDOM.render(<App />, document.getElementById('app'));
