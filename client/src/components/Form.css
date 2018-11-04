@@ -1,3 +1,6 @@
+/*
+  when dealing with CSS make sure you know that you're editing what you think you are.
+*/
 /* .form {
   display: flex;
   background: aquamarine;
@@ -20,6 +23,15 @@
   font-style: normal;
   src: url(https://d2ue93q3u507c2.cloudfront.net/assets/generated_assets/e0be9bd5e372b2c379893b776e7b2b96.otf) format(“opentype”);
   } */
+/* /* */
+
+.companyName {
+  font-family: 'DIN Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 10px;
+  height: 48px;
+}
 
 .topDiv {
   font-family: 'DIN Pro', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -27,26 +39,53 @@
   font-weight: normal;
 }
 
+.dropNav {
+  position: absolute;
+  display: none;
+}
+
+.dropNav li {
+  border-bottom: rgba(255, 255, 255, .2)
+}
+
+.dropDown:hover > .dropNav {
+  background-color: #1ae9aa;
+  display: block;
+}
+
+.buyOptions {
+  margin-left: 176px;
+  color: #1ae9aa;
+  position: relative;
+}
 
 .form {
-  display: block;
+  display: flex;
   position: relative;
   border: 10px;
   border-style: outset;
-  box-shadow: 0 0 4px 1px;
-  border-color: #f4f4f5;
-  padding: 0 24px;
-  margin-top: 0em;
   width: 275.77px;
   height: 354px;
   color: white;
   background-color: #1b1b1d;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);
+  background: #1b1b1d;
+  border-color: #0e0d0d;
+  padding: 0 24px;
+  border: none;
+  box-sizing: inherit;
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;  
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 19px;
+  justify-content: center;
  }
 
  .buyingPower {
   display: block;
   position: relative;
-  border: 10px;
   border-style: outset;
   box-shadow: 0 0 4px 1px;
   border-color: #f4f4f5;
@@ -57,6 +96,14 @@
   color: white;
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   font-style: normal;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);
+  background: #1b1b1d;
+  border: none;
+  box-sizing: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 19px;
  }
 
  .orderType {
@@ -67,7 +114,6 @@
    margin-top: -15px;
   }
 
-  
   .marketPriceContainer {
     width:275.77px;
     height: 42px;  
@@ -95,7 +141,14 @@
   
   .estimatedPriceContainer {
     width:275.77px;
-    height: 42px;  
+    height: 42px;
+    border-top: 1px solid;
+    border-color: #171718;
+    align-items: center;
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    white-space: nowrap;
   }
   
   .estimatedCost {
@@ -104,6 +157,14 @@
     margin-left: 140px;
   }
   
+  .label{
+  align-items: center;
+  display: flex;
+  height: 48px;
+  justify-content: space-between;
+  white-space: nowrap;
+  }
+
   .reviewOrder {
     display: inline-block;
     width: 227.77px;
@@ -114,63 +175,94 @@
     font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
     font-style: normal;
     font-weight: bold;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
   }
   
   .reviewOrderContainer {
-    width: 275.77px;
-    height: 85px;
+    width: 230.77px;
+    height: 48px;
+    margin-left: 24px;  
   }
   
-  .buyOptions {
-    margin-left: 176px;
-  }
   
   .ellipsesBox {
-    margin-bottom: 112px;
+    background-color: white;
   }
 
   .ellipses {
     fill: white;
+    margin-top: -20px;
   }
+
   
   .watchListContainer {
     display: inline-block;
     width: 227.77px;
     height: 48px;
     text-align: center;
+    margin-left: 48px;
   }
   
   .watchList {
     width: 227.77px;
     height: 48px;
-    background: #1ae9aa;
+    background-color: #1ae9aa;
     border-color:#1ae9aa;
+    color:#1ae9aa;
     text-align: center;
     font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
     font-style: normal;
     font-weight: bold;
+    border: 1px solid ;
+    border-radius: 4px;
+    cursor: pointer;
+    background: transparent;
+    
+  }
+  /*
+  user agent stylesheets are what is presented in the absence of a style sheet from the user or the site by the browser
+  */
+
+  
+  /* .orderForm {
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.6);
+    background: #1b1b1d;
+    border-color: #0e0d0d;
+    padding: 0 24px;
+    position: relative;
+    border: none;
+    box-sizing: inherit;
+     
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    line-height: 19px;
   }
 
-    /* .sideNav {
-      height: 100%;
-      width: 200px;
-      overflow-x: hidden;
-    }
-  
-    .sideNavA {
-      display: block;
-      outline: none;
-      cursor: pointer;
-    }
-  
-    .sideNavB {
-      display: block;
-      outline: none;
-      cursor: pointer;
-    }
-    
-    .sideNavC {
-      display: block;
-      outline: none;
-      cursor: pointer;
-    } */
+  .cardHeader {
+    align-items: center;
+    border-bottom: 1px solid;
+    display: flex;
+    height: 52px;
+    justify-content: space-between;
+    margin: 0 -24px;
+    padding: 4px 24px 0;
+  }
+
+  .companyName{
+    margin-right: 12px;
+    border-bottom: 2px solid transparent;
+    height: 100%;
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0;
+    font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+  } */

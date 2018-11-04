@@ -5,11 +5,18 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack -d --watch",
     "start": "nodemon server/index.js",
     "seed": "node database/seed.js",
-    "tests": "jest"
+    "test": "./node_modules/.bin/jest"
+  },
+  "jest": {
+    "setupFiles": [
+      "./client/src/setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "repository": {
     "type": "git",
@@ -26,7 +33,11 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-to-json": "^3.3.4",
     "css-loader": "^1.0.1",
     "jest": "^23.6.0",
     "react": "^16.6.0",
@@ -38,6 +49,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-core": "^7.0.0-bridge.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "faker": "^4.1.0",

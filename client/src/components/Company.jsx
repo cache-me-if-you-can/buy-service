@@ -2,12 +2,10 @@ import React from 'react';
 import OrderType from './OrderType.jsx';
 import form from './Form.css';
 
-const Company = (props) => (
-  <div>
-    <div className={form.topDiv}> BUY {props.name}
-      <OrderType/>
-    </div>
-  </div>
+const Company = (props) => (  
+  <h3 className={form.companyName}> BUY {props.name}
+    <OrderType/>
+  </h3>
 );
 
 export default Company;
