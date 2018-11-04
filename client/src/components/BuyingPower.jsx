@@ -1,8 +1,8 @@
 import React from 'react';
-
+import form from './Form.css';
 const BuyingPower = (props) => (
   <div>
-    <span>{props.credits} Buying Power </span>
+    <span className={form.moveSpan}>{props.credits} Buying Power </span>
   </div>
 );
 

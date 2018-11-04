@@ -132,7 +132,7 @@ class Form extends React.Component {
           </div>
         </div>
       </div>
-      <div className= {form.buyingPower}>
+      <div className= {form.buyingPower}> 
         <BuyingPower credits={this.state.buyingPower}/>
       </div>
       <div className={form.watchListContainer}>

@@ -16,7 +16,9 @@
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ]
+    ],
+    "collectCoverage": true,
+  "coverageReporters": ["json", "html"]
   },
   "repository": {
     "type": "git",
