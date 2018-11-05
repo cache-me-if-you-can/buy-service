@@ -85,6 +85,7 @@
   letter-spacing: 0.25px;
   line-height: 19px;
   justify-content: center;
+  margin-left: 875px;
  }
  
  .buyingPower {
@@ -108,6 +109,7 @@
   font-weight: 400;
   letter-spacing: 0.25px;
   line-height: 19px;
+  margin-left: 875px;
  }
 
  .orderType {
@@ -208,7 +210,7 @@
     width: 227.77px;
     height: 48px;
     text-align: center;
-    margin-left: 48px;
+    margin-left: 923px;
     margin-top: 24px;
   }
   
@@ -226,7 +228,6 @@
     border-radius: 4px;
     cursor: pointer;
     background: transparent;
-    
   }
   /*
   user agent stylesheets are what is presented in the absence of a style sheet from the user or the site by the browser

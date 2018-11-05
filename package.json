@@ -18,7 +18,10 @@
       "enzyme-to-json/serializer"
     ],
     "collectCoverage": true,
-  "coverageReporters": ["json", "html"]
+    "coverageReporters": [
+      "json",
+      "html"
+    ]
   },
   "repository": {
     "type": "git",
