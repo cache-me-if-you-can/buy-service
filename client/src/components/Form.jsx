@@ -71,42 +71,6 @@ class Form extends React.Component {
   }
 
   render() {
-    // return <div className= "sideBarContent">
-    //   <form className= {form.orderForm}>
-    //     <header className= {form.cardHeader}>
-    //       <div className="cardHContainer">
-    //         <div className= {form.companyName}>
-    //           <div>
-    //             <div>
-    //               <div>
-    //                 <Company name={this.state.company}></Company>
-    //               </div>
-    //             </div>
-    //           </div>
-    //         </div>
-    //         <svg>
-    //           <g></g>
-    //         </svg>
-    //         <div>
-    //           <div>
-    //             <div>
-    //               <div>
-    //                 <svg>
-    //                   <path></path>
-    //                 </svg>
-    //               </div>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </header>
-    //     <div></div>
-    //     <div>
-    //       <div></div>
-    //       <div></div>
-    //     </div>
-    //   </form>
-    // </div>;
     return <div>
       <div className= {form.form}>
         <div className= {form.topDiv}>
@@ -142,6 +106,6 @@ class Form extends React.Component {
   }
 }
 
-ReactDOM.render(<Form/>, document.getElementById('app'));
+ReactDOM.render(<Form/>, document.getElementById('buyService'));
 
 export default Form;
