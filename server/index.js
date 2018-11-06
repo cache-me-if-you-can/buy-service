@@ -14,7 +14,6 @@ app.use(express.static(__dirname + '/../client/dist'));
 
 app.get('/api/buytest', (req, res) => {
   dbuy.findRandom().limit(10).exec((err, docs) => {
-    console.log(docs);
     if (err) {
       res.send(err);
     } else {
