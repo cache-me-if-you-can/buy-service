@@ -25,6 +25,11 @@
   } */
 /* /* */
 
+.paragraphs {
+  width:300px;
+  height: 275px;
+}
+
 .companyName {
   font-family: 'DIN Pro', -apple-system, BlinkMacSystemFont, sans-serif;
   font-style: normal;
@@ -65,7 +70,7 @@
 
 .form {
   display: flex;
-  position: relative;
+  /*position: relative;*/
   border: 10px;
   border-style: outset;
   width: 275.77px;
@@ -86,6 +91,9 @@
   line-height: 19px;
   justify-content: center;
   margin-left: 875px;
+  position: -webkit-sticky;  // required for Safari
+  position: sticky;
+  top: 0; 
  }
  
  .buyingPower {
