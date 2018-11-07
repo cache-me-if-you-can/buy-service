@@ -71,7 +71,7 @@ class Form extends React.Component {
   }
 
   render() {
-    return <div>
+    return (<div>
     <div>
     </div>
       <div className= {form.form}>
@@ -104,7 +104,7 @@ class Form extends React.Component {
       <div className={form.watchListContainer}>
         <WatchList/>
       </div>
-    </div>;
+    </div>);
   }
 }
 
