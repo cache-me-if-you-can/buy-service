@@ -90,7 +90,6 @@
   letter-spacing: 0.25px;
   line-height: 19px;
   justify-content: center;
-  margin-left: 875px;
   position: -webkit-sticky;  // required for Safari
   position: sticky;
   top: 0; 
