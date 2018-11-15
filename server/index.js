@@ -29,7 +29,7 @@ app.get('/api/buytest/one/:id', (req, res) => {
     if (err) {
       res.status(500).send(err);
     } else {
-      res.status(200).send(JSON.stringify(doc))
+      res.status(200).json(doc);
     }
   })
 });
@@ -40,20 +40,11 @@ app.post('/api/buytest/:id', (req, res) => {
     if (err) {
       res.status(500).send();
     } else {
-      res.status(201).send('lovin life');
+      res.status(201).send();
     }
   })
 });
-// app.post('/api/bpowertest', (req, res) => {
-//   const param = req.body;
-//   modalBPower.create(param, (err, success) => {
-//     if (err) {
-//       res.status(500).send();
-//     } else {
-//       res.status(201).send(success);
-//     }
-//   })
-// });
+
 app.put('/api/buytest/:id', (req, res) => {
   const id = JSON.parse(req.params.id);
   const params = req.body;
