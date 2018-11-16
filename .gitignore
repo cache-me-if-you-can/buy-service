@@ -65,3 +65,5 @@ client/dist/bundle.js
 client/src/components/Company.css
 client/src/index.css
 client/src/.DS_Store
+createCSV/out.csv
+createCSV/test.csv
