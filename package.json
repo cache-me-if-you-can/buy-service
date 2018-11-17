@@ -9,7 +9,8 @@
     "start": "nodemon server/index.js",
     "seed": "node database/seed.js",
     "test": "./node_modules/.bin/jest",
-    "write": "node createCSV/write.js"
+    "write": "node createCSV/write.js",
+    "pg": "node postgres/index.js"
   },
   "jest": {
     "setupFiles": [
@@ -50,6 +51,7 @@
     "fs": "0.0.1-security",
     "jest": "^23.6.0",
     "nodemon": "^1.18.6",
+    "pg": "^7.6.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "style-loader": "^0.23.1",
