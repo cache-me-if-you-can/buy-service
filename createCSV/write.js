@@ -3,20 +3,30 @@ const stringify = require('csv-stringify');
 const faker = require('faker');
 const csvWriter = require('csv-write-stream');
 const writer = csvWriter();
+const symbol = require('../util/utils.js');
 
-writer.pipe(fs.createWriteStream('test.csv', {flags: 'a'}))
 
-const seed = () => {
+writer.pipe(fs.createWriteStream('out.csv', {flags: 'a'}));
 
-  for ( let i = 0; i < 10; i ++) {
+const seed = (start) => {
+  for (var i = start; i < 10000000; i ++) {
     let data = {
       id: i,
-      symbol: faker.finance.currencyCode(),
+      symbol: symbol.numToSymbol(i),
       name: faker.company.companyName(),
-      marketPrice: faker.finance.amount(23.46, 567.98, 2)
+      marketPrice: faker.finance.amount(2.46, 567.98, 2)
     };
-    writer.write(data);
+
+    var res = writer.write(data);
+    if (!res) {
+      break;
+    }
+  }
+  if (!res) {
+    writer.once('drain', () => {
+      seed(i + 1);
+    });
   }
 };
-//commiting
-seed();
+
+seed(0);
