@@ -68,6 +68,3 @@ client/src/index.css
 client/src/.DS_Store
 createCSV/out.csv
 createCSV/test.csv
-
-# new relic
-newrelic.js
